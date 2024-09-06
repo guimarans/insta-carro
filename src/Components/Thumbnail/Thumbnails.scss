@@ -1,0 +1,52 @@
+.thumbnail {
+  /** base **/
+  &__container {
+    display: flex;
+    border: 1px solid #c6c6c6;
+  }
+
+  &__picture {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  /**variacoes do componente**/
+  &.vertical {
+    width: 273px;
+
+    .thumbnail {
+      &__container {
+        padding: 18px;
+        gap: 1.25rem;
+        border-radius: 10px;
+        flex-direction: column;
+      }
+
+      &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      &__title {
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+
+      &__text {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &.horizontal {
+    width: 100%;
+  }
+}

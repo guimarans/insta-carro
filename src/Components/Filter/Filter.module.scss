@@ -1,0 +1,16 @@
+.filter {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 44px;
+    justify-content: space-between;
+
+    &__text {
+        color: #C5C5C5;
+    }
+    
+    &__favorites {
+        color: rgba(244, 55, 53, 0.7);
+        border:none;
+        font-size: 1.5rem;
+    }
+}

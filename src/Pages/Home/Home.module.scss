@@ -1,0 +1,38 @@
+.header {
+  margin-top: 110px;
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 0.875rem;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  &__description {
+    color: rgba(33, 33, 33, 0.6);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.168;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
+
+.home {
+  &__content {
+    margin: 108px 0;
+  }
+
+  &__characters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.625rem 1rem;
+    @media (min-width: 980px) {
+      justify-content: space-between;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
