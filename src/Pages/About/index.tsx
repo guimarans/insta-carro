@@ -1,9 +1,5 @@
-import Header from "Components/Header";
+import Banner from "Components/Banner";
 
 export default function About() {
-  return (
-    <Header>
-      <h1>DESCUBRA TODOS OS QUADRINHOS DESTE PERSONAGEM</h1>
-    </Header>
-  );
+  return <Banner text="DESCUBRA TODOS OS QUADRINHOS DESTE PERSONAGEM" />;
 }

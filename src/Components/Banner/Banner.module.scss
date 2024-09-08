@@ -1,0 +1,9 @@
+.banner {
+  background: url("./Background.png");
+
+  &__call {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}

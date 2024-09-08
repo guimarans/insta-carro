@@ -14,25 +14,25 @@ export default function Character() {
   const [searchHero, setSearchHero] = useState("");
   const [offset, setOffset] = useState(0);
 
-  useEffect(() => {
-    api
-      .get("characters", {
-        "axios-retry": {
-          retries: 0,
-        },
-        params: {
-          limit: LIMIT,
-        },
-      })
-      .then((response) => {
-        //setCharacters(response.data.data.results);
-        // setPaginationInfo(response.data.data);
-        console.log(response.data.data.results);
-      })
-      .catch((error) => {
-        console.error("Show error axios characters == " + error.statusCode);
-      });
-  }, [characters]);
+  // useEffect(() => {
+  //   api
+  //     .get("characters", {
+  //       "axios-retry": {
+  //         retries: 0,
+  //       },
+  //       params: {
+  //         limit: LIMIT,
+  //       },
+  //     })
+  //     .then((response) => {
+  //       setCharacters(response.data.data.results);
+  //       setPaginationInfo(response.data.data);
+  //       console.log(response.data.data.results);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Show error axios characters == " + error.statusCode);
+  //     });
+  // }, []);
 
   return (
     <section className={home.home__content}>
@@ -46,6 +46,13 @@ export default function Character() {
 
       <div className={home.home__characters}>
         {characters.map((character) => (
+          // <Thumbnail
+          //   format="vertical"
+          //   id={character.id}
+          //   image={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+          //   name={character.name}
+          //   description={character.description}
+          // />
           <Thumbnail
             format="vertical"
             id={character.id}
