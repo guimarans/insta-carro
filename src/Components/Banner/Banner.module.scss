@@ -6,9 +6,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 115px 0 3rem 0;
-  margin-bottom: -236px;
+  padding: 115px 1rem 3rem 1rem;
+  margin-bottom: -156px;
   box-sizing: border-box;
+  @media (min-width: 980px) {
+    padding: 115px 0 3rem 0;
+    margin-bottom: -236px;
+  }
 
   &__call {
     color: #fff;

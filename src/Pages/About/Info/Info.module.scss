@@ -3,5 +3,10 @@
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    @media (min-width: 980px) {
+      padding: 0;
+    }
   }
 }

@@ -1,8 +1,10 @@
 .search {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 12px;
-
+  @media (min-width: 980px) {
+    justify-content: flex-end;
+  }
   li {
     display: flex;
     align-items: center;
