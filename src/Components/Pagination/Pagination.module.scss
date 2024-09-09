@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  @media (min-width: 980px) {
+  @media (min-width: 1025px) {
     justify-content: flex-end;
   }
   li {
