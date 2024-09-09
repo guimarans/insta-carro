@@ -1,9 +1,14 @@
-import Banner from "./Banner.module.scss";
+import banner from "./Banner.module.scss";
 
-export default function banner({ text }: any) {
+export default function Banner() {
   return (
-    <header className={Banner.banner}>
-      <h1 className={Banner.banner_call}>{text}</h1>
+    <header className={banner.banner}>
+      <div className={banner.banner__container}>
+        <h1 className={banner.banner__call}>
+          DESCUBRA TODOS OS <br /> QUADRINHOS <br />
+          DESTE PERSONAGEM
+        </h1>
+      </div>
     </header>
   );
 }

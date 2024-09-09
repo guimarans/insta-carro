@@ -4,9 +4,7 @@ import { Outlet } from "react-router-dom";
 export default function PageDefault() {
   return (
     <>
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </>
   );

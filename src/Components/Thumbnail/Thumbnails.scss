@@ -1,4 +1,5 @@
 .thumbnail {
+  text-decoration: none;
   /** base **/
   &__container {
     display: flex;
@@ -17,7 +18,7 @@
     }
   }
 
-  /**variacoes do componente**/
+  /**variações do componente**/
   &.vertical {
     width: 273px;
 
@@ -47,6 +48,99 @@
   }
 
   &.horizontal {
+    display: block;
     width: 100%;
+    min-height: 263px;
+    margin-bottom: 56px;
+    padding-right: 68px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    .thumbnail {
+      &__container {
+        display: flex;
+        gap: 56px;
+        border: none;
+      }
+
+      &__picture {
+        width: 248px;
+        border-radius: 0px;
+      }
+
+      &__body {
+        display: flex;
+        max-width: 798px;
+        padding: 18px 0;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+      }
+
+      &__title {
+        font-size: 1.875rem;
+      }
+
+      &__info {
+        display: flex;
+        gap: 24px;
+        font-size: 1.125rem;
+      }
+
+      &__page_icon {
+        display: block;
+        padding-left: 24px;
+        background: url("./eye.svg") no-repeat left;
+      }
+
+      &__text {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  &.circle {
+    display: block;
+    width: 100%;
+    min-height: 340px;
+    border-radius: 40px;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    background: #fff;
+    margin-bottom: 80px;
+    @media (min-width: 998px) {
+      padding: 64px 104px;
+      border-radius: 70px;
+    }
+    .thumbnail {
+      &__container {
+        min-height: 214px;
+        gap: 38px;
+        border: none;
+      }
+
+      &__picture {
+        width: 200px;
+        height: 212px;
+        border-radius: 100%;
+      }
+
+      &__body {
+        max-width: 724px;
+        width: 100%;
+      }
+
+      &__title {
+        margin-bottom: 40px;
+        font-size: 2.625rem;
+      }
+
+      &__text {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

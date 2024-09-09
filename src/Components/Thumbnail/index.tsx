@@ -31,7 +31,7 @@ export default function Thumbnail({
           <h3 className="thumbnail__title">{name}</h3>
           {format === "horizontal" && (
             <p className="thumbnail__info">
-              {date} <span> {nPage} </span>
+              {date} <span className="thumbnail__page_icon"> {nPage} </span>
             </p>
           )}
           <p className="thumbnail__text">{description}</p>

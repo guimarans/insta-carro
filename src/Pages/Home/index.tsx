@@ -5,7 +5,7 @@ import home from "./Home.module.scss";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Header classe={home.header}>
         <h1 className={home.header__title}>
           EXPLORE O UNIVERSO E CRIE SUA EQUIPE
@@ -16,6 +16,6 @@ export default function Home() {
         </p>
       </Header>
       <Character />
-    </>
+    </main>
   );
 }
