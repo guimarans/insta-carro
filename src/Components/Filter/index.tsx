@@ -1,15 +1,20 @@
+import Search from "Components/Search";
 import filter from "./Filter.module.scss";
 
-export default function Filter({ hero }: any) {
+export default function Filter({ total }: any) {
   return (
-    <nav className={filter.filter}>
-      {Number(hero) > 1 ? (
-        <p className={filter.filter__text}>Encontrados {hero} heróis</p>
-      ) : (
-        <p className={filter.filter__text}>Encontrado {hero} herói</p>
-      )}
+    <>
+      <Search placeholder="Procure por heróis" />
 
-      <button className={filter.filter__favorites}>Somente favoritos</button>
-    </nav>
+      <nav className={filter.filter}>
+        {Number(total) > 1 ? (
+          <p className={filter.filter__text}>Encontrados {total} heróis</p>
+        ) : (
+          <p className={filter.filter__text}>Encontrado {total} herói</p>
+        )}
+
+        <button className={filter.filter__favorites}>Somente favoritos</button>
+      </nav>
+    </>
   );
 }

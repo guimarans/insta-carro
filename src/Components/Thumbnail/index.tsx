@@ -3,7 +3,7 @@ import "./Thumbnails.scss";
 import classNames from "classnames";
 
 interface thumbProps {
-  format: "horizontal" | "vertical" | "circle";
+  format?: "horizontal" | "vertical" | "circle";
   id: string;
   image?: string;
   name?: any;

@@ -1,0 +1,12 @@
+import Banner from "../../Components/Banner/index";
+
+export default function About() {
+  return (
+    <>
+      <Banner>
+        <h1> Aqui vai o texto </h1>
+      </Banner>
+      <main></main>
+    </>
+  );
+}
